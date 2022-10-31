@@ -6,10 +6,6 @@ body {
     background-color: #d9dcd6;
 }
 
-h1 {
-    display: inline-block;
-    font-size: 48px;
-}
 
 h2 {
     margin-bottom: 20px;
@@ -41,17 +37,27 @@ a {
 p {
     font-size: 16px;
     color: var(--brown);
+    font-weight:100;
 }
 
 /* Header section*/
 header {
-    /* display:flex;  */
+    display:flex; 
     width:100%;
-    /* flex-wrap: wrap; */
+    flex-direction:row;
+
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--brown);
     color: #ffffff;
+}
+
+/* Title in header */
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 0 20%;
+    font-size: 48px;
 }
 
 /*navigation links in the header*/
@@ -90,7 +96,7 @@ nav {
     bottom: 16px;
     right:16px;
     height:85%;
-    width:14%;
+    width:10%;
 }
 
 /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
@@ -100,6 +106,7 @@ nav {
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+    margin-top:0rem;
   }
   
   .justify-center {
@@ -126,11 +133,18 @@ nav {
     margin-bottom: 1.5rem;
   }
 
+  .content-column p{
+    position:relative;
+    width:79%;
+    padding-top:0rem;
+    padding-left:2rem;
+  }
+
   /* The first work which needed to be bigger than all others */
   .bigWork{
     position:relative;
     height: 200px;
-    width: 80%;
+    width: 79%;
     padding:2rem;
     margin-left: 2rem;
     background-image: url("../images/images.jpg "); 
@@ -179,11 +193,20 @@ figure a{
     color: var(--brown);
 }
 
-/* nav links should become column on smaller screen */
+.justify-left{
+    margin-left:2rem;
+}
 
+/* nav links should become column on smaller screen */
 @media screen and (max-width: 768px) {
+
+    h1{
+        flex-direction:column;
+        justify-content: center;
+    }
     nav {
       flex-direction: column;
+      justify-content: center;
     }
   
   }
