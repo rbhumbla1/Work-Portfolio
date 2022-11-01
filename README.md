@@ -14,7 +14,9 @@ The finished site satifies the following acceptance criteria:
 7. In the contacts, the GitHub is an active link, taking us to the GitHUb home apge of the developer.
 
 ## Screenshot of finished Work-Portfolio site
-Screenshot can be found in this repository at: ./assets/images/screenshot.JPG
+Screenshot of the page can be found in this repository at: ./assets/images/screenshot1.JPG
+Demo of the project can be found here: ./assets/images/Work-Portfolio-Demo.gif
+
 
 ## Usage
 You can access:
