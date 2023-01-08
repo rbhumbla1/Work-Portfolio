@@ -1,5 +1,5 @@
 # Work-Portfolio
-This repository contains the files for Module 2 Challenge problem: Create a Portfolio page from scratch
+This repository contains the files for Challenge problem: Create a Portfolio page from scratch
 
 ## Description
 The finished site satifies the following acceptance criteria:

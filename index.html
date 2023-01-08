@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
     <!-- Header -->
     <!-- Navigation liknks will take you to section below -->
@@ -16,16 +18,17 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#AboutMe">About Me</a>
+                    <a href="#AboutMe" class="hlink">About Me</a>
                 </li>
                 <li>
-                    <a href="#AboutWork">Work</a>
+                    <a href="#AboutWork" class="hlink">Work</a>
                 </li>
                 <li>
-                    <a href="#AboutContact">Contact Me</a>
+                    <a href="#AboutContact" class="hlink">Contact Me</a>
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a
+                        href="https://docs.google.com/document/d/1SFNAzc7UqTH0-faUBU2EGZJIdyNyubTatG_xwVNfspo/edit" class="hlink">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -35,106 +38,162 @@
         <!-- Subtitle section -->
         <div class="subtitle">
             <img src="./assets/images/ProfilePhoto.JPG">
-           <h2>Rima Bhumbla</h2>
+            <h2>Rima Bhumbla</h2>
         </div>
 
         <!-- About Me -->
         <section class="row justify-center">
             <div class="title-column" id="AboutMe">
                 <figure>
-                  <h2 class="card-header"> About Me</h2>
+                    <h2 class="card-header"> About Me</h2>
                 </figure>
             </div>
             <div class="content-column">
                 <figure>
-                    <p class="abt">I am an experienced Software Engineer.  After finishing my Masters degree in Computer Science, I started my career as a developer.  I then switched my career to Quality Assurance field and then to QA managerment.  I have decided to get back to my roots and passion.  The coding bootcamp will help me upskill myself with latest technologies and hopefully find my dream job.</p>
-                  </figure>
-              </div>
+                    <p class="abt">Front-end web developer leveraging background in Quality Assurance to provide unique perspectives on how end-users interact with websites and software platforms. Earned a certificate in Full Stack Web Development from the University of Berkeley Extension Coding Boot Camp. Innovative problem-solver who is passionate about developing applications with a focus on mobile-first design and development. Strengths in creativity, teamwork, and building and leading projects from ideation to execution.
+                    </p>
+                </figure>
+            </div>
         </section>
 
         <!-- Work -->
-        <!-- each section is a link to deplyed application -->
+        <!-- each section is a link to deployed application -->
         <section class="row justify-center">
             <div class="title-column" id="AboutWork">
                 <figure>
-                  <h2 class="card-header"> Work</h2>
+                    <h2 class="card-header"> Work</h2>
                 </figure>
             </div>
             <div class="content-column">
-                    <section class="row justify center">
-                        <a href="https://danwillett.github.io/national-park-planner/" target="_blank" class="bigWork npsImg">
+                <section class="row">
+                    <div class="bigWork">
+                        <a href="https://rbhumbla1.github.io/outdoorsyISH/" target="_blank">
                             <figure>
-                                <h3><strong>outdoorsyISH</strong></h3>
-                                <p><strong>  outdoorsyISH is an application to plan a National Park experience for people who prefer the great indoors!!
-                                </strong></p>
-                                <p><strong> (NPS Public API, Openlayers Public API, Foundation CSS Framework) </strong></p>
-                            </figure>   
+                                <h3><strong> Group Project: outdoorsyISH</strong></h3>
+                            </figure>
                         </a>
-                    </section>
-                    <section class="row justify center">
-                        <a href="https://rbhumbla1.github.io/Weather-Dashboard/" target="_blank" class="smallWork weatherImg">
+                        <p> <b>Technology:</b> National Park Service(NPS) Public API, Openlayers Public API, Foundation CSS Framework <br><br>
+                            <b>Objective:</b> Plan a National Park experience for people who prefer the great indoors!!<br><br>
+                            <b>Responsibility:</b> Authored nps-api.js for processing and displaying data from NPS API calls and producing a list of parks based on user criteria.<br><br>
+                            <a href="https://github.com/rbhumbla1/outdoorsyISH" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/README-Generator/" target="_blank">
+                            <figure>
+                                <h3><strong>Professional README Generator</strong></h3>
+                            </figure>
+                        </a>
+                        <p> <b>Technology:</b> Node.js, Inquirer <br><br>
+                            <b>Objective:</b> A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.<br><br>
+                            <a href="https://github.com/rbhumbla1/README-Generator" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Weather-Dashboard/" target="_blank">
                             <figure>
                                 <h3><strong>Weather Dashboard</strong></h3>
-                                <p><strong>HTML, Bootstrap, jQuery and Openweather Public API</strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Project-Tracker/" target="_blank" class="smallWork projImg">
+                        <p><b>Technology:</b> HTML, Bootstrap, jQuery and Openweather Public API <br><br>
+                            <b>Objective:</b> A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It will display current weather for a city along with 5 day forecast.<br><br>
+                            <a href="https://github.com/rbhumbla1/Weather-Dashboard" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Project-Tracker/" target="_blank">
                             <figure>
                                 <h3><strong>Project Tracker</strong></h3>
-                                <p><strong>Bootstrap, Google Fonts, jQuery and Day.js</strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Workday-Scheduler/" target="_blank" class="smallWork schImg">
+                        <p><b>Technology:</b> Bootstrap, Google Fonts, jQuery and Day.js<br><br>
+                            <b>Objective:</b> An application that allows the user to keep track and manage their projects.<br><br>
+                            <a href="https://github.com/rbhumbla1/Project-Tracker" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Workday-Scheduler/" target="_blank">
                             <figure>
                                 <h3><strong>Workday Scheduler</strong></h3>
-                                <p><strong>HTML and CSS, jQuery </strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Password-Generator/" target="_blank" class="smallWork pwdImg">
+                        <p><b>Technology:</b> HTML and CSS, jQuery <br><br>
+                            <b>Objective:</b> A simple calendar application that allows a user to save events for each hour of the day.<br><br>
+                            <a href="https://github.com/rbhumbla1/Workday-Scheduler" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Password-Generator/" target="_blank">
                             <figure>
                                 <h3><strong>Password Generator</strong></h3>
-                                <p><strong> HTML, CSS,Javascript </strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Code-Quiz/" target="_blank" class="smallWork quizImg">
+                        <p><b>Technology:</b> HTML, CSS, Javascript <br><br>
+                            <b>Objective:</b> An application to generate password based on given length and types of characters.<br><br>
+                            <a href="https://github.com/rbhumbla1/Password-Generator" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Code-Quiz/" target="_blank">
                             <figure>
                                 <h3><strong>Code Quiz</strong></h3>
-                                <p><strong> HTML, CSS,Javascript </strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Word-Guess_Game/" target="_blank" class="smallWork guessImg">
+                        <p><b>Technology:</b> HTML, CSS,Javascript, Web APIs <br><br>
+                            <b>Objective:</b> An application runs a timed JavaScript code quiz and displays the high scores of all the participants.<br><br>
+                            <a href="https://github.com/rbhumbla1/Code-Quiz" target="_blank">GitHub Repository</a>
+                        </p>
+
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Word-Guess-Game/" target="_blank">
                             <figure>
                                 <h3><strong>Word Guess Game</strong></h3>
-                                <p><strong>Javascript</strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/RPS-Game/" target="_blank" class="smallWork rpsImg">
+                        <p><b>Technology:</b> Javascript <br><br>
+                            <b>Objective:</b> A game application which allows user to guess words within a certain time period and keeps track of their wins and losses.  <br><br>
+                            <a href="https://github.com/rbhumbla1/Word-Guess-Game" target="_blank">GitHub Repository</a>
+                        </p>
+
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/RPS-Game/" target="_blank">
                             <figure>
                                 <h3><strong>Let's play Rock, Paper, Scissors</strong></h3>
-                                <p><strong>Javascript </strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/CSS-Cheatsheet/" target="_blank" class="smallWork cheatImg">
+                        <p><b>Technology:</b> Javascript <br><br>
+                            <b>Objective:</b> A game application which allows user to play Rock, Paper and Scissors game with an automated opponent and keeps track of their wins, ties and losses.<br><br>
+                            <a href="https://github.com/rbhumbla1/RPS-Game" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/CSS-Cheatsheet/" target="_blank">
                             <figure>
                                 <h3><strong>CSS Snippet Cheatsheet</strong></h3>
-                                <p><strong>Advanced CSS </strong></p>
-                            </figure>   
+                            </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Contacts/" target="_blank" class="smallWork contactImg">
+                        <p><b>Technology:</b> Advanced CSS <br><br>
+                            <b>Objective:</b> A webpage that will hold a collection of CSS code snippets.<br><br>
+                            <a href="https://github.com/rbhumbla1/CSS-Cheatsheet" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                    <div class="smallWork">
+                        <a href="https://rbhumbla1.github.io/Contacts/" target="_blank">
                             <figure>
                                 <h3><strong>Contacts</strong></h3>
-                                <p><strong>HTML, CSS</strong></p>
                             </figure>
                         </a>
-                        <a href="https://rbhumbla1.github.io/Accessibility-Standards/" target="_blank" class="smallWork accImg">
-                            <figure>
-                                <h3> <strong>Accessibility Standards</strong></h3>
-                                <p><strong>HTML, CSS</strong></p>
-                            </figure>
-                        </a>
-                        
-                    </section>
-              </div>
+                        <p><b>Technology:</b> HTML, CSS <br><br>
+                            <b>Objective:</b> A HTML landing page to collect visitor's contact information.<br><br>
+                            <a href="https://github.com/rbhumbla1/Contacts" target="_blank">GitHub Repository</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <!-- Contact -->
@@ -142,28 +201,29 @@
         <section class="row justify-center">
             <div class="title-column" id="AboutContact">
                 <figure>
-                  <h2 class="card-header"> Contact Me</h2>
+                    <h2 class="card-header">Contact Me</h2>
                 </figure>
             </div>
             <div class="content-column">
                 <section class="row justify-left">
-                    <figure class="contact">
-                        <h6>444-555-6666</h6>
+                    <figure >
+                        <h6>925-272-7601</h6>
                     </figure>
-                    <figure class="contact">
+                    <figure >
                         <h6>rima.bhumbla@gmail.com</h6>
                     </figure>
-                    <figure class="contact">
+                    <figure >
                         <h6><a href="https://github.com/rbhumbla1" target="_blank">GitHub</a></h6>
                     </figure>
-                    <figure class="contact">
-                        <h6>LinkedIn</h6>
+                    <figure >
+                        <h6><a href="https://www.linkedin.com/in/rimabhumbla/" target="_blank">LinkedIn</a></h6>
                     </figure>
                 </section>
             </div>
         </section>
 
     </main>
-    
+
 </body>
+
 </html>
